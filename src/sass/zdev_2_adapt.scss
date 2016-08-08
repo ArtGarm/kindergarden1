@@ -3,6 +3,9 @@
 }
 @media screen and (max-width: 1600px){
 
+    .block3-wrap .contein-row.last-row:before{display: none;}
+    .block3-wrap .row-middle:after{display: none;}
+
 }
 @media screen and (max-width: 1366px){
 

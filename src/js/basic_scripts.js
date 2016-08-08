@@ -140,10 +140,10 @@ function animationBlock(item){
 
 /*GO TO href*/
 function goTo(){
-    $('.header-menu a').click(function(e){
+    $(' a.jakor ').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
-        var target = $(href).offset().top-65;
+        var target = $(href).offset().top;
         $(scroller).animate({scrollTop:target},500);
     });
 }
@@ -231,7 +231,7 @@ $(document).ready(function() {
 
     $('.footer_placeholder').height($('.footer').outerHeight());
 
-    //goTo();
+    goTo();
     //animationBlock($('.setion-animate'));
 });
 

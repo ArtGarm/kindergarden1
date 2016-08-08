@@ -227,8 +227,8 @@
             }
         }
         .row-middle{position: relative; 
-            &:before{ content: ''; position: absolute; background-image: url(../images/bg-b1.png);  background-size: 100% 100%; bottom: 100px; width: 924px; height: 533px; right: 0 }
-            &:after{ content: ''; position: absolute; background-image: url(../images/emmet.png); width: 395px; height: 621px; background-size: 100% 100%; bottom: 100px; right: 5%; }
+            &:before{ content: ''; position: absolute; background-image: url(../images/bg-b1.png);  background-size: 100% 100%; bottom: 100px; width: 924px; height: 533px; right: 0; z-index: -1; }
+            &:after{ content: ''; position: absolute; background-image: url(../images/emmet.png); width: 395px; height: 621px; background-size: 100% 100%; bottom: 100px; right: 5%; z-index: -1; }
 
             .block-texter{ margin-left: calc(50% - 600px); max-width: 600px; padding: 40px 0;
                 .text{
@@ -390,7 +390,7 @@
         }
         .contein-row .block-text{
             .convert-texter{max-width: 600px; }
-            ul{padding-left: 0;
+            ul{padding-left: 20px;
                 li{ line-height: 30px; padding-bottom: 35px;
                     &:last-child{padding-bottom: 0;}
                     b{color: #4f4f4f;}
