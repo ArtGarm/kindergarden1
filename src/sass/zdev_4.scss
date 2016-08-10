@@ -1,0 +1,17 @@
+.kindergarden-block10-wrap{
+    .mbox{
+        .kindergarden-block10-mainlist{
+            li{list-style-type: none;
+                
+            }
+        }
+        .kindergarden-block10-exeptionslist{
+            li{list-style-type: none;
+                &:before{
+                    content: '*';
+                    color: rgb(255, 0, 0);
+                } 
+            }
+        }
+    }
+}
