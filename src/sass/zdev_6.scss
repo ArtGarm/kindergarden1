@@ -26,3 +26,20 @@
 	    }
 	}
   }
+
+.under-titele-text{font-weight: bold; text-transform: uppercase; text-align: center;font-size: 18px;
+	p{margin: 0;}
+}
+
+#features{padding-top: 20px;
+	.mbox{
+	 	.title-text{ padding-bottom: 20px;
+	 		&:before{content: '';position: absolute;top: 0;left: calc(50% - 38px/2);width: 38px;height: 15px;background-image: url(../images/stars.png);}
+	 		&:after{content: '';position: absolute;bottom: 0;width: 44px;height: 2px;background-color: #404040;left: calc(50% - 44px/2); 			
+	 		}
+	 		h2{
+	 			
+	 		}
+	 	}
+	}
+}
