@@ -11,12 +11,26 @@
             .item-plashka{position: absolute;bottom: 18px;width: calc(100% + 16px);left: -8px;height: 60px;background-color: #f0474e;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;padding: 10px;font-size: 18px;color: white;font-family: 'Myriad Pro Regular',sans-serif;text-transform: uppercase;}
         }
     }
-    .our_groups_text{display: flex;flex-wrap: wrap;
-        .item{width: 50%;font-size: 16px;font-family: "Roboto";font-weight: bold;line-height: 1.875;color: #4f4f4f;
-            p{margin:0 auto;}
-            span{display: inline;padding: 6px 9px;color: white;background-color: #f5a0a4;}
+    .our_groups_text{display: flex;flex-wrap: wrap;max-width: 1100px;margin:0 auto;width: 100%;padding: 100px 10px 0px;
+        .item{width: 50%;font-size: 16px;font-family: "Roboto";line-height: 1.875;color: #4f4f4f;margin-bottom: 45px;padding-right: 10px;
+            p{margin:0;max-width: 476px;padding-bottom: 24px;position: relative;
+                &:after{height: 2px;width: 80px;position: absolute;bottom: 0;left: 0;background-color: #f7c4c6;content: "";}
+            }
+            span{display: inline;padding: 6px 9px;color: white;background-color: #f5a0a4;font-weight: bold;}
         }
-
+    }
+    .our_groups_price{width: 100%;background-color: #fff;padding: 70px 50px 50px;min-height: 400px;outline: 1px solid red;
+        .our_groups_price_title{font-size: 24px;font-family: "Roboto";color: rgb(255, 122, 128);font-weight: bold;line-height: 1.25;text-align: center;padding-bottom: 55px;
+            span{position: relative;
+                &:after{content: '';position: absolute;background-color: #f0474e;height: 2px;left: 50%;transform: translateX(-50%);width: 44px;bottom: -15px;}
+            }
+        }
+        .our_groups_price_row{position: relative;display: flex;align-items: center;justify-content: center;padding-bottom: 24px;border-bottom: 1px solid #e8e8e8;margin-bottom: 12px;font-size: 18px;color: #7a7a7a;font-family: "Roboto";
+            span{color: #fe898e;font-weight: bold;}
+            b{font-size: 30px;color: #ff7a80;margin-right: 5px;}
+            .left{width: 67%;padding-right: 20px;}
+            .right{width: 33%;}
+        }
     }
 }
 //
