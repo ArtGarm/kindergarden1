@@ -53,27 +53,30 @@
                         a{display: block; }
                     }
                     nav{
-                        &>ul{ list-style: none; padding: 0; margin: 0; display: flex; align-items: center; justify-content: space-between; 
-                            &>li{ position: relative; 
-                                a{color: white; display: block; padding: 20px 25px;  font-family: "Roboto"; font-size: 15px; font-weight: 400; line-height: 1; text-transform: uppercase; text-decoration: none; background-color: transparent; transition: all 0.3s;
-                                    
-                                }
-                                &:hover{
-                                    a{background-color: #f0474e; }
-                                    &>ul{height: auto; opacity: 1; pointer-events: auto;  }
-                                }
-                                &>ul{list-style: none; padding: 0; margin: 0; height: 0; pointer-events: none; opacity: 0; position: absolute; top: 100%; left: 0; width: 263px; background-color: #f0474e; transition: all 0.3s;
-                                    &>li{ display: block;
-                                        a{color: white; font-family: "Roboto"; text-transform: none; font-size: 15px; font-weight: 400; position: relative; display: block;
-                                            &:before{content: ''; position: absolute; left: 0; top: 50%; bottom: 50%; width: 5px; transition: all 0.3s; background-color: white; }
-                                            &:hover{
-                                                &:before{top: 0; bottom: 0;}
+                        .desctop-butt{
+                            &>ul{ list-style: none; padding: 0; margin: 0; display: flex; align-items: center; justify-content: space-between; 
+                                &>li{ position: relative; 
+                                    a{color: white; display: block; padding: 20px 25px;  font-family: "Roboto"; font-size: 15px; font-weight: 400; line-height: 1; text-transform: uppercase; text-decoration: none; background-color: transparent; transition: all 0.3s;
+                                        
+                                    }
+                                    &:hover{
+                                        a{background-color: #f0474e; }
+                                        &>ul{height: auto; opacity: 1; pointer-events: auto;  }
+                                    }
+                                    &>ul{list-style: none; padding: 0; margin: 0; height: 0; pointer-events: none; opacity: 0; position: absolute; top: 100%; left: 0; width: 263px; background-color: #f0474e; transition: all 0.3s;
+                                        &>li{ display: block;
+                                            a{color: white; font-family: "Roboto"; text-transform: none; font-size: 15px; font-weight: 400; position: relative; display: block;
+                                                &:before{content: ''; position: absolute; left: 0; top: 50%; bottom: 50%; width: 5px; transition: all 0.3s; background-color: white; }
+                                                &:hover{
+                                                    &:before{top: 0; bottom: 0;}
+                                                }
                                             }
                                         }
                                     }
                                 }
                             }
                         }
+                        .mobile-butt{display: none;}
                     }
                     .after-butt{}
                 }            
@@ -123,7 +126,7 @@
 
     .fancybox-overlay{background: none; background-color: rgba(255, 255, 255, 0.7);}
     .fancybox-opened .fancybox-skin{box-shadow: none; background: white;}
-    .fancybox-close{ background-image: none; top: 30px; right: 30px; width: 55px; height: 55px; background-color: #b8b8b8; background-image: url(../images/cross-symbol.png); background-position: center; background-repeat: no-repeat; transition: all 0.3s;
+    .fancybox-close{ background-image: none; top: 30px; right: 30px; width: 55px; height: 55px; background-color: #b8b8b8; background-image: url(../images/cross-symbol.png); background-position: center; background-repeat: no-repeat; transition: all 0.3s; background-size: 17px 17px;
         &:hover{background-color: #f0474e; }
     }
     #call-popup{ width: 550px; padding-bottom: 105px; padding-top: 150px;
@@ -249,7 +252,7 @@
         .conteiner{padding: 100px 15px;}
         
     }
-    .wrap-box{ max-width: 1370px; margin: 0 auto; width: 100%; box-shadow: 12.5px 21.7px 37.5px 12.5px rgba(0, 0, 0, 0.13);position: relative;
+    .wrap-box{ max-width: 1370px; margin: 0 auto; width: calc(100% - 30px); box-shadow: 12.5px 21.7px 37.5px 12.5px rgba(0, 0, 0, 0.13);position: relative;
         &:before{ content: ''; z-index: 1; position: absolute; bottom: 0; left: -200px; background-image: url(../images/citylego4.png); width: 437px; height: 646px; background-size: 100% 100%; background-repeat: no-repeat; }
         .title-row{ padding-bottom: 26px; padding-top: 66px; position: relative; font-family: "Oswald"; font-size: 30px; font-weight: 500;color: #4f4f4f; text-transform: uppercase; text-align: center;
             span{color: #f0474e;}
@@ -310,6 +313,7 @@
 /* block6 */
 
     .block6{ padding: 120px 0; background-image: url(../images/chessmaster.jpg); background-position: center center; background-repeat: no-repeat; background-size: 1950px;
+        .wrap-box .sheets{margin: 0 auto;}
         .conteiner{
             .top-row{ padding-bottom: 450px;
                 .super-block{ max-width: 606px; margin: 0 auto; position: relative; padding-top: 45px; padding-bottom: 25px;
@@ -449,3 +453,11 @@
     }
 
 /* block 15 */
+
+/* addnew */
+
+    .addnew{
+        .contein-row.last-row:before{display: none;}
+    }
+
+/* addnew */

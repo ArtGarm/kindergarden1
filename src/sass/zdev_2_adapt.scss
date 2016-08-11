@@ -12,20 +12,257 @@
 }
 @media screen and (max-width: 1280px){
 
+    /* block 3 */
+
+        .block3-wrap .row-middle{
+            .block-texter{ margin: 0 auto; padding: 0 15px; }
+        }
+
+    /* block 3 */
+
 }
 @media screen and (max-width: 1024px){
 
+    /* block 1 */ 
+
+        .block1-wrap .conteiner{flex-wrap: wrap; align-content: center; justify-content: center;
+            .item{ width: 98%; margin-bottom: 40px; padding: 40px 15px;
+                .left-m{ display: block; margin: 0 auto 10px; }
+                .right-m{ width: 100%;
+                    p{font-size: 14px; padding-bottom: 10px;
+                        &:last-child{padding-bottom: 0;}
+                    }
+                }
+                &:last-child{margin-bottom: 0;}
+            }
+        }
+
+    /* block 1 */ 
+
+    /* title */
+
+        .title-text h2 { margin: 0; padding-bottom: 25px; padding-top: 35px; font-size: 24px;}
+
+    /* title */
+
+    /* block 2 */
+
+        .block2-wrap .conteiner .after .texter p{font-size: 16px;
+            a{font-size: 20px;}
+        }
+
+    /* block 2 */
+
+    /* block 3 */
+
+        .block3-wrap {
+            .contein-row{ display: block;
+                .block-image{ width: 100%; height: 200px; margin-bottom: 30px;margin-top: 30px;
+                    &:after{display: none;}
+                }
+                .block-text{width: 100%; padding: 0 15px !important;
+                    .some-text{text-align: center;}
+                    ul{padding-left: 0;}
+                }
+            }
+        }
+    /* block 3 */
+
+    /* wrap-box */
+
+        .wrap-box{
+            &:before{display: none;}
+            .sheets{margin: 0 auto; padding: 0 15px;
+                 ul li{padding: 22px 15px !important;
+                 }
+            }
+            .title-row{font-size: 24px; padding-top: 40px; padding-left: 10px; padding-right: 10px; }
+        }
+         
+
+    /* wrap-box */
+
+    /* block6 */
+
+        .block6{ padding: 10px 15px;
+            .conteiner .top-row .super-block {    padding-top: 20px;
+                p{padding-top: 20px; 
+                }
+            }
+        }
+
+    /* block6 */
+
+    /* block14 */
+
+        .block14 { padding-bottom: 20px;
+            .row-for-far{ flex-wrap: wrap; align-content: center; justify-content: space-around; }
+        }
+
+    /* block14 */
+
+    /* block7 */
+
+        .block7{padding: 20px 0;}
+
+    /* block7 */
+
+    /* block10 */
+
+        .block10 .wrap-box .sheets ul li .right{width: 50%;}
+
+    /* block10 */
+
+    /* block11 */
+
+        .block11{padding: 20px;}
+
+    /* block11 */
+
+    /* block12 */
+
+        .block12{ padding: 20px 15px;
+             .contein-row .block-text ul li{padding-bottom: 15px;}
+        }
+
+    /* block12 */
 }
 @media screen and (max-width: 992px){
+
+    /* header */
+        header .banner .navigation .contein nav { position: absolute; left: calc(50% - 50px/2);
+            .desctop-butt{ display: none;}
+            .mobile-butt{display: block; position: relative;
+                .humburger{width: 50px; height: 50px; background-color: #f0474e; cursor: pointer; 
+                    b{ position: absolute; width: 40px; height: 3px; border-radius: 2px; background-color: white; left: 5px; top: calc(50% - 3px/2); transition: all 0.3s;
+                        &:before{ top: -10px; width: 40px; height: 3px; position: absolute; content: ''; background-color: white; left: 0px; border-radius: 2px; transition: all 0.3s;}
+                        &:after{ top: 10px; width: 40px; height: 3px; position: absolute; content: ''; background-color: white; left: 0px; border-radius: 2px; transition: all 0.3s;}
+                    }
+                    &.opened{ 
+                        b{ background-color: transparent;
+                            &:before{transform: rotate(45deg); top: 0;}
+                            &:after{transform: rotate(-45deg); top: 0;}
+                        }
+                    }
+                }
+                &>ul{ display: none; background-color: #f0474e; position: absolute; width: 320px; list-style: none; margin: 0; ;left: calc(50% - 320px/2); height: auto; padding: 0;
+                    li{width: 100%; 
+                        a{display: flex; align-items: center; justify-content: flex-start; height: 40px; text-decoration: none; padding-left: 25px;
+                            &:hover{background-color: #2d09f3; }
+                            span{ font-family: "Roboto"; color: white; text-transform: uppercase;  font-size: 15px;  font-weight: 400;}
+                        }
+                        &>ul{ list-style: none; display: block; padding: 0; margin: 0;
+                            li{
+                                a{padding-left: 50px;}
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        header .banner .after-block .alone-butt{padding: 130px 0;
+            a span{font-size: 48px;}
+        }
+    /* header */
+
+    /* wrap-box */
+
+        .wrap-box{
+            .sheets{margin:  auto; 
+                 ul li{
+                    .left{ padding-left: 20px;  font-size: 16px; width: 48%;
+                        span{    font-size: 20px;}
+                    }
+                    .right{font-size: 16px;width: 50% !important; text-align: right;
+                        b, span{font-size: 20px;}
+                    }
+                 }
+            }
+            .title-row{font-size: 24px; padding-top: 40px; }
+        }
+         
+
+    /* wrap-box */
 
 }
 @media screen and (max-width: 767px){
 
+    /* block2-wrap */
+
+        .block2-wrap .conteiner .after .texter p {font-size: 14px;}
+
+    /* block2-wrap */
+
+    /* block3-wrap */
+
+        .block3-wrap .contein-row .block-text {
+            .some-text{  font-size: 16px; }
+            ul li{font-size: 14px;}
+            .text p{ font-size: 14px; }
+            .head-text {font-size: 16px; text-align: center;}
+            .after-all{font-size: 14px;}
+        }
+         
+
+    /* block3-wrap */
+
+
+    /* special-5 */
+
+        .special-5 .block-text {
+            .title-row{ font-size: 24px; padding-top: 30px;}
+            .detail{font-size: 16px;}
+            .after-red{font-size: 16px;}
+        }
+
+    /* special-5 */
+
+    /* block6 */
+
+        .block6{ padding: 10px 15px;
+            .conteiner .top-row .super-block {    padding-top: 20px;
+                p{padding-top: 20px;  font-size: 14px;
+                    b{font-size: 14px;}
+                }
+            }
+        }
+
+    /* block6 */
 }
 @media screen and (max-width: 666px){
 
+    /* header */
+        .after-butt{ display: none; }
+        header .banner .navigation .contein nav{position: static;
+            .mobile-butt > ul{right: 0; left: auto; width: 281px;}
+        }
+
+        header .banner .after-block .alone-butt{padding: 130px 0;
+            a span{font-size: 36px;}
+        }
+
+        header .banner .top-row .mbox{ display: block;
+            .soc{ margin: 0 auto; margin-bottom: 20px;}
+            .call-me-back{margin: 0 auto;}
+        }
+    /* header */
 }
 @media screen and (max-width: 479px){
+    /* wrap-box */
+        .wrap-box .sheets ul li{
+            .left {font-size: 14px !important;
+                span {font-size: 16px !important; }
+            }
+            .right{width: 95px !important; }
+        } 
+    /* wrap-box */
+
+    /* header */
+        header .banner .after-block .alone-butt{padding: 130px 0;
+            a span{font-size: 28px;}
+        }
+    /* header */
 
 }
 @media screen and (max-width: 320px){
