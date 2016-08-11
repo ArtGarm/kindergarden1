@@ -17,13 +17,37 @@
 
 }
 @media screen and (max-width: 767px){
-
+    //kindergarden-block6 & kindergarden-block7
+    .common-beckground2{
+        .our_groups:before{top: 150px;}
+        .two-images{flex-direction: column;flex-wrap: wrap;align-items: center;justify-content: center;
+        }
+        .our_groups_text{
+            .item{width: 100%;margin-bottom: 23px;
+                p{max-width: 100%;padding-bottom: 13px;}
+            }
+        }
+        .our_groups_price{padding: 30px 20px 30px;min-height: auto;
+            .our_groups_price_row{font-size: 16px;
+                b{font-size: 25px;}
+            }
+        }
+    }
 }
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
-
+    //kindergarden-block6 & kindergarden-block7
+    .common-beckground2{
+        .our_groups:before{top: 175px;}
+        .our_groups_text{padding-left: 0;padding-right: 0;padding-top: 50px;}
+        .our_groups_price{padding: 20px 15px 15px;
+            .our_groups_price_row{font-size: 14px;
+                b{font-size: 20px;display: block;}
+            }
+        }
+    }
 }
 @media screen and (max-width: 320px){
 
