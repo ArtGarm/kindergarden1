@@ -1,17 +1,19 @@
-.kindergarden-block10-wrap{background-image: url(../images/bl-10.jpg); background-position: top center; background-repeat: no-repeat; background-size: cover;
-    .kindergarden-block10{padding-top: 60px; padding-bottom: 110px;
-        .kindergarden-block10-mainlist{
-            li{ list-style-type: none;
-
+#kindergarden-block10-wrap{ background-image: url(../images/bl-10.jpg); background-position: top center; background-repeat: no-repeat; background-size: cover;
+    .kindergarden-block10{ padding-top: 45px; padding-bottom: 110px;
+        .kindergarden-block10-mainlist{ padding-bottom: 70px; display: flex; justify-content: center;
+            ul{ margin: 0;
+                li{ padding-left: 52px; list-style-type: none; font-size: 16px; color: #7a7a7a; font-weight: bold; line-height: 37px; font-family: 'Myriad Pro Regular', sans-serif;
+                b{ color: #4f4f4f; }
+                }
             }
         }
-        .kindergarden-block10-exeptionslist{background-color: #fff;
-            ul{position: relative;
-                &:before{ content: ''; position: absolute; top: 0; left:0; width: 38px; height: 15px; background-image: url(../images/stars.png);  }
+        .kindergarden-block10-exeptionslist{ padding-top: 40px; padding-bottom: 45px; background-color: #fff; display: flex; justify-content: center; position: relative;
+            ul{margin: 0; padding-top: 49px; padding-bottom: 15px; position: relative; padding-left: 0px;
+                &:before{ content: ''; position: absolute; width: 38px; height: 15px; background-image: url(../images/stars.png); top: 0; left:50%; transform: translate(-50%);}
+                &:after{content: ''; position: absolute; width: 50px; height: 2px; background-color: #f0474e; bottom: 0; left:50%; transform: translate(-50%);}
             }
-            li{ list-style-type: none;
-                &:before{ content: '*'; color: rgb(255, 0, 0);} 
-                &:after{content: ''; position: absolute; bottom: 0; left: 0; width: 44px; height: 2px; background-color: #f0474e;}
+            li{ padding-top: 6px; padding-bottom: 25px; list-style-type: none; font-size: 14px; color: #4f4f4f; text-transform: uppercase; font-family: 'Myriad Pro Regular', sans-serif; position: relative; 
+                &:before{ content: '*';  position: absolute; color: rgb(255, 0, 0); top: 0; left: -35px; font-size: 25px;} 
             }
         }
     }
