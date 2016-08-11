@@ -1,0 +1,18 @@
+.kindergarden-block10-wrap{background-image: url(../images/bl-10.jpg); background-position: top center; background-repeat: no-repeat; background-size: cover;
+    .kindergarden-block10{padding-top: 60px; padding-bottom: 110px;
+        .kindergarden-block10-mainlist{
+            li{ list-style-type: none;
+
+            }
+        }
+        .kindergarden-block10-exeptionslist{background-color: #fff;
+            ul{position: relative;
+                &:before{ content: ''; position: absolute; top: 0; left:0; width: 38px; height: 15px; background-image: url(../images/stars.png);  }
+            }
+            li{ list-style-type: none;
+                &:before{ content: '*'; color: rgb(255, 0, 0);} 
+                &:after{content: ''; position: absolute; bottom: 0; left: 0; width: 44px; height: 2px; background-color: #f0474e;}
+            }
+        }
+    }
+}
