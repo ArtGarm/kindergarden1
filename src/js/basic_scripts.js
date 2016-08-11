@@ -195,19 +195,19 @@ function bindExample(){
 function headeButer(menuMobile,toggleMenu){
     if(menuMobile){
         menuMobile.click(function(event) {
-            if($(window).width()<1024-$.scrollbarWidth()){
-                $(this).toggleClass('active');
+            if($(window).width()<992-$.scrollbarWidth()){
+                $(this).toggleClass('opened');
                 toggleMenu.stop().slideToggle();
             }
         });
 
         $(document).on('click touchstart',function (event){
-            if($(window).width()<1024-$.scrollbarWidth()){
+            if($(window).width()<992-$.scrollbarWidth()){
                 var div = toggleMenu;
                 if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
                     {
                         toggleMenu.slideUp();
-                        menuMobile.removeClass('active');
+                        menuMobile.removeClass('opened');
                     }
             }
         });
@@ -226,6 +226,9 @@ function headeButer(menuMobile,toggleMenu){
 
 /* DOCUMENT READY  */
 $(document).ready(function() {
+
+    headeButer( $('.mobile-butt>.humburger') , $('.mobile-butt>ul'));
+    
 
     //oneHeightItems();
 
