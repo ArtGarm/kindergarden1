@@ -27,31 +27,76 @@
 	}
   }
 
-.under-titele-text{font-weight: bold; text-transform: uppercase; text-align: center;font-size: 18px;
+.under-titele-text{font-weight: bold; text-transform: uppercase; text-align: center;font-size: 18px; margin-bottom: 50px;
 	p{margin: 0;}
 }
+.common-beckground1{background: url('../images/kindergarden-background1.jpg') no-repeat;
+	background-size: cover; background-position: center;
+	
+}
 
-#features{padding-top: 20px;
+#features{padding-top: 20px; padding-bottom: 80px; 
 	.mbox{
 	 	.title-text{ padding-bottom: 20px;
-	 		&:before{content: '';position: absolute;top: 0;left: calc(50% - 38px/2);width: 38px;height: 15px;background-image: url(../images/stars.png);}
-	 		&:after{content: '';position: absolute;bottom: 0;width: 44px;height: 2px;background-color: #404040;left: calc(50% - 44px/2); 			
-	 		}
 	 		h2{
 	 			
 	 		}
 	 	}
-	 	.squares-container{
-	 		.square-wrap{
-	 			.square{
+	 	.squares-container{display: flex; flex-wrap: wrap; max-width: 980px; margin: 0 auto; justify-content: space-around; 
+	 		.square-wrap{width: 445px;  margin-bottom: 30px;
+	 			&:nth-child(3){display: flex; justify-content: center; width: 100%;
+	 			}
+	 			.square{max-width: 445px; background:  #fff; border: 5px solid #f8f8f8; padding: 40px 50px 35px 50px; min-height: 215px;box-shadow: 12.5px 21.7px 37.5px 12.5px rgba(0, 0, 0, 0.13), 0 0 9.5px 0.5px rgba(0, 0, 0, 0.13);
 	 				.square-heading{
-	 					h3{margin: 0;}
+	 					h3{margin: 0 0 20px 0 ; color:#f0474e; }
 	 				}
-	 				.main-contain{
+	 				.main-contain{max-width: 330px;
 	 					p{margin: 0;}
 	 				}
 	 			}
 	 		}
 	 	}
+	}
+}
+
+#program2{
+	.box-container{display: flex; flex-wrap: wrap; justify-content: space-around;padding-top: 80px;
+		.box{ max-width: 280px; background: rgba(112, 116, 152, 0.9); border: 20px solid rgba(120,135,169, 0.9) ; display: flex; flex-direction: column; align-items: center; padding: 0 15px ; margin-bottom: 60px; min-height: 380px;
+			.image-wrap{position: relative; min-height: 150px;margin-top: -50px;margin-bottom: 20px;
+				&:after{content: ''; display: block; position: absolute; bottom: -20px; left: 50%;  background: #f0474e; min-height: 3px; width: 35px; margin-left: - 17px;}
+			
+			}
+			.text-container{ color: #fff; text-align: center; font-size: 14px; line-height: 2.143;
+				
+			}
+		}
+	}
+}
+
+#school-training, #additional-training{
+	.under-titele-text{font-size: 18px; max-width: 570px; width: 100%; margin: 0 auto 90px; color: #4f4f4f;line-height: 1.667; 
+		
+	}
+	.lessons-container{max-width: 1060px; width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap; margin: 0 auto;
+		.lesson{ display: flex; flex-direction: column; align-items: center;  width: 275px;
+			.image-wrap{margin-bottom: 35px;
+			}
+			.transparent-butt{ width: 100%;  border: 1px solid #e8e8e8; font-family: 'Oswald', sans-serif; font-size: 18px; padding: 20px 0; text-align: center;cursor:pointer;
+			&:hover{color: #fff; background: #262260; transition: 0.3s;
+				
+			}
+				p{margin: 0;}
+			}
+			.under-butt{font-size: 14px; color: #a8a8a8; padding: 0 30px; text-align: center;			
+			}
+		}
+	}
+}
+
+#additional-training{
+	.lessons-container{max-width: 1175px;
+		.lesson{ width: 380px;
+			.transparent-butt{line-height: 1.2;}
+		}
 	}
 }
