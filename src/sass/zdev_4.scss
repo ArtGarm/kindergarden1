@@ -1,26 +1,72 @@
-//block5
-#kindergarden-block5-wrap{ background-image: url(../images/bl5.jpg); background-position: top center; background-repeat: no-repeat; background-size: cover; padding-top: 40px;
-    .title-text{padding-bottom: 36px;}
-    .types-language{ display: flex; justify-content: space-around; padding-left: 70px; padding-right: 70px; padding-bottom: 380px;
-        .type-lg{ display: flex; flex-direction: column; justify-content: space-between; align-content: center; max-width: 140px; width: 100%; background-color: #e5e5e5; padding-top: 15px;
-            .row{display: flex; justify-content: center; padding-bottom: 20px; position: relative;}
-            .row2{position: relative; color: #fff; font-weight: 500; font-size: 19px; font-family: 'Oswald', sans-serif;
-                &:after{ content: ""; position: absolute; z-index: 1;
-                        left: -5px; width: calc(100% + 10px); height: 55px; background-color: #27295d;}
-                span{position: relative; z-index: 2; padding-top: 5px; display: inline-block; width: 100px; text-align: center; line-height: 1.2;}
-            }
-            .row3{color: #000; font-size: 13px; padding-bottom:18px; padding-top: 1px;
-                .row{padding: 0; padding-top: 10px; padding-bottom: 15px;}
-                .rowh:after{content: ''; position: absolute; background-color: #cacaca; height: 1px; width: 125px;  top: 32px; display: block;    
+//st-page
+.st-page-wrapper{padding-top: 35px; padding-bottom: 35px; padding-left: 10px;
+    padding-right: 10px;
+    .st-page{  margin: 0 auto; background-image: url(../images/stp-1.png); background-repeat: no-repeat; background-size: contain; background-position: center center;
+        .mbox{max-width:1004px; padding-left: 20px; padding-right: 20px; width:100%; margin:0 auto; 
+            .rows{min-height: calc(100vh - 70px); display: flex; flex-direction: column; justify-content: center;
+                .row{display: flex; justify-content: space-between;
+                    a{position: relative; z-index: 1; 
+                        .row-img{height: 270px; width: 270px; border-radius: 50%; border: solid; border-color: #ff6269; border-width: 12px; overflow: hidden; position: relative; z-index: 2;
+                            img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(1) translateZ(0); max-width: none; z-index: 1; /*tranasition:all ease.2s;*/ transition: all ease 0.2s;
+
+                            }
+                            &:before{content: ''; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 2;position: absolute;top: 0;left: 0;transform: translateZ(0);}
+
+                            &:hover img{
+                                transform: scale(1.1) translate(-50%, -50%) ; 
+                            }
+                        }
+                        .row-img-other{background-color: #d04a50;
+                             &:before{content: ''; background: none;}
+                        }
+                        span{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; font-family: 'ProximaNova', sans-serif; font-weight: 700; text-decoration: none; color: #ffffff; font-size: 18px;}
+                    }
                 }
             }
-            .row4{
-                a{text-decoration: none; color: #fff; font-weight: 500; font-size: 11px; text-transform: uppercase; padding: 10px 25px; background-color: #f0474e; transition: all 300ms ease;
-                    &:hover{background-color: #cc0008;}
+            .row-center{margin: -40px auto;
+                img{display: block; border-radius: 50%;}
+            }
+        }
+    }
+}
+
+.kindergarden-block10-exeptionslist{ padding-top: 40px; padding-bottom: 45px; background-color: #fff; display: flex; justify-content: center; position: relative;
+    ul, p{margin: 0; padding-top: 49px; padding-bottom: 15px; position: relative; padding-left: 0px;
+        &:before{ content: ''; position: absolute; width: 38px; height: 15px; background-image: url(../images/stars.png); top: 0; left:50%; transform: translate(-50%);}
+        &:after{content: ''; position: absolute; width: 50px; height: 2px; background-color: #f0474e; bottom: 0; left:50%; transform: translate(-50%);}
+        li{ padding-top: 6px; padding-bottom: 25px; list-style-type: none; font-size: 14px; color: #4f4f4f; text-transform: uppercase; font-family: 'Myriad Pro Regular', sans-serif; position: relative; 
+         &:before{ content: '*';  position: absolute; color: rgb(255, 0, 0); top: 0; left: -35px; font-size: 25px;} 
+        }
+    }
+    p{text-align: center; font-size: 18px;color: rgb(79, 79, 79);line-height: 2;}
+}
+
+//block5
+#kindergarden-block5-wrap{ background-image: url(../images/bl5.jpg); background-position: top center; background-repeat: no-repeat; background-size: cover; padding-top: 40px; padding-bottom: 80px;
+    .title-text{padding-bottom: 36px;}
+    .types-language{ display: flex; justify-content: space-around; padding-left: 70px; padding-right: 70px; padding-bottom: 110px;
+        .type-lg-wrap{ display: flex; justify-content: space-between; width: 30%;
+            .type-lg{ display: flex; flex-direction: column; justify-content: space-between; align-content: center; max-width: 140px; width: 100%; background-color: #e5e5e5; padding-top: 15px;
+                .row{display: flex; justify-content: center; padding-bottom: 20px; position: relative;}
+                .row2{position: relative; color: #fff; font-weight: 500; font-size: 19px; font-family: 'Oswald', sans-serif;
+                    &:after{ content: ""; position: absolute; z-index: 1;
+                            left: -5px; width: calc(100% + 10px); height: 55px; background-color: #27295d;}
+                    span{position: relative; z-index: 2; padding-top: 5px; display: inline-block; width: 100px; text-align: center; line-height: 1.2;}
+                }
+                .row3{color: #000; font-size: 13px; padding-bottom:18px; padding-top: 1px;
+                    .row{padding: 0; padding-top: 10px; padding-bottom: 15px;}
+                    .rowh:after{content: ''; position: absolute; background-color: #cacaca; height: 1px; width: 125px;  top: 32px; display: block;    
+                    }
+                }
+                .row4{
+                    a{text-decoration: none; color: #fff; font-weight: 500; font-size: 11px; text-transform: uppercase; padding: 10px 25px; background-color: #f0474e; transition: all 300ms ease;
+                        &:hover{background-color: #cc0008;}
+                    }
                 }
             }
         }
     }
+    .kindergarden-block10-exeptionslist{padding: 40px 150px;  background-color: rgba(255, 255, 255, 0.7); box-shadow:0 10px 50px rgba(0, 0, 0, 0.5);}
 }
 
 //block-10
@@ -31,15 +77,6 @@
                 li{ padding-left: 52px; list-style-type: none; font-size: 16px; color: #7a7a7a; font-weight: bold; line-height: 37px; font-family: 'Myriad Pro Regular', sans-serif;
                 b{ color: #4f4f4f; }
                 }
-            }
-        }
-        .kindergarden-block10-exeptionslist{ padding-top: 40px; padding-bottom: 45px; background-color: #fff; display: flex; justify-content: center; position: relative;
-            ul{margin: 0; padding-top: 49px; padding-bottom: 15px; position: relative; padding-left: 0px;
-                &:before{ content: ''; position: absolute; width: 38px; height: 15px; background-image: url(../images/stars.png); top: 0; left:50%; transform: translate(-50%);}
-                &:after{content: ''; position: absolute; width: 50px; height: 2px; background-color: #f0474e; bottom: 0; left:50%; transform: translate(-50%);}
-            }
-            li{ padding-top: 6px; padding-bottom: 25px; list-style-type: none; font-size: 14px; color: #4f4f4f; text-transform: uppercase; font-family: 'Myriad Pro Regular', sans-serif; position: relative; 
-                &:before{ content: '*';  position: absolute; color: rgb(255, 0, 0); top: 0; left: -35px; font-size: 25px;} 
             }
         }
     }
