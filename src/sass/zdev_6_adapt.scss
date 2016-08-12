@@ -5,19 +5,35 @@
 
 }
 @media screen and (max-width: 1366px){
-
+	#short-group .baterfly{display: none;}
+	#day-off-group .baterfly{display: none;}
 }
 @media screen and (max-width: 1280px){
-
+	
 }
 @media screen and (max-width: 1024px){
-
+	.kindergarden-header .kindergarden-banner .after-block .alone-butt .alone-but-description {
+		.text-conteiner{max-width: 370px;}
+			.left-img{left: -30px; top: -10px;}
+			.right-img{right: -30px; top: -25px;}
+		
+	}
+	#short-group .short-group .contein-row .block-image img{display: none;
+		&.group-mobile{display: block;}
+	}
+	#day-off-group .day-off-group .contein-row .block-image img{display: none;
+		&.group-mobile{display: block;}
+	}
 }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 767px){
-
+	.kindergarden-header .kindergarden-banner .after-block .alone-butt .alone-but-description {
+		.right-img{display: none;}
+		.left-img{display: none;}
+		.text-conteiner{width: 100%;max-width: 470px; padding: 20px;}
+	}
 }
 @media screen and (max-width: 666px){
 
