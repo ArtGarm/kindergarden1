@@ -7,7 +7,7 @@
         .st-page{ 
             .mbox{
                 .rows{justify-content: space-around;
-                    .row{justify-content: space-between; padding-left: 90px; padding-right: 90px;
+                    .row{justify-content: space-between; padding-left: 75px; padding-right: 75px;
                         a{
                             .row-img{max-width: 230px; max-height: 230px;
                                 img{}
@@ -19,7 +19,7 @@
                     }
                 }
                 .row-center{margin: -50 auto;
-                    img{max-width: 200px;}
+                    img{max-width: 210px;}
                 }
             }
         }
@@ -66,8 +66,8 @@
     .st-page-wrapper{
         .st-page{ 
             .mbox{
-                .rows{justify-content: space-around;
-                    .row{justify-content: space-between; padding-left: 50px; padding-right: 50px;
+                .rows{justify-content: space-between;
+                    .row{justify-content: space-between; padding-left: 0px; padding-right: 0px;
                         a{
                             .row-img{max-width: 230px; max-height: 230px;
                                 img{}
@@ -121,11 +121,11 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .st-page-wrapper{
         .st-page{ 
             .mbox{padding-left: 0px; padding-right: 0px;
-                .rows{justify-content: space-around; padding-top: 60px; padding-bottom: 60px; 
+                .rows{justify-content: space-between; padding-top: 80px; padding-bottom: 80px; 
                     .row{justify-content: space-between; padding-left: 0px; padding-right: 0px;
                         a{
                             .row-img{
