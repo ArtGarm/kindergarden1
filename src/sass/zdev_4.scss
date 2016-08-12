@@ -6,9 +6,8 @@
             .rows{min-height: calc(100vh - 70px); display: flex; flex-direction: column; justify-content: center;
                 .row{display: flex; justify-content: space-between;
                     a{position: relative; z-index: 1; 
-                        .row-img{height: 270px; width: 270px; border-radius: 50%; border: solid; border-color: #ff6269; border-width: 12px; overflow: hidden; position: relative; z-index: 2;
+                        .row-img{height: 240px; width: 240px; border-radius: 50%; border: solid; border-color: #ff6269; border-width: 12px; overflow: hidden; position: relative; z-index: 2;
                             img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(1) translateZ(0); max-width: none; z-index: 1; transition: all ease 0.2s;
-
                             }
                             &:before{content: ''; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 2;position: absolute;top: 0;left: 0;transform: translateZ(0);}
                         }
