@@ -1,25 +1,134 @@
+@media screen and (min-width: 1024px) {
+    .st-page-wrapper {
+        .st-page {
+            .mbox {
+                .rows {
+                    .row {
+                        a {
+                            opacity: 0;
+                        }
+                    }
+                }
+                .row-center {
+                    margin: -40px auto;
+                    position: relative;
+                    z-index: 1;
+                    img {
+                        display: block;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .a1 {
+        animation-name: forRow1;
+        animation-duration: 1s;
+        transition: all 3s ease;
+        animation-fill-mode: forwards;
+    }
+    .a2 {
+        animation-name: forRow2;
+        animation-duration: 1s;
+        animation-delay: 500ms;
+        transition: all 3s ease-out;
+        animation-fill-mode: forwards;
+    }
+    .a3 {
+        animation-name: forRow3;
+        animation-duration: 1s;
+        animation-delay: 1000ms;
+        transition: all 3s ease-out;
+        animation-fill-mode: forwards;
+    }
+    .a4 {
+        animation-name: forRow4;
+        animation-duration: 1s;
+        animation-delay: 1500ms;
+        transition: all 3s ease-out;
+        animation-fill-mode: forwards;
+    }
+    @keyframes forRow1 {
+        0% {
+            transform: translate(120%, 100%);
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes forRow2 {
+        0% {
+            transform: translate(-120%, 100%);
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes forRow3 {
+        0% {
+            transform: translate(120%, -100%);
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes forRow4 {
+        0% {
+            transform: translate(-120%, -100%);
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
 @media screen and (max-width: 1920px) {}
 
 @media screen and (max-width: 1600px) {}
 
 @media screen and (max-width: 1366px) {
-    .st-page-wrapper{
-        .st-page{ 
-            .mbox{
-                .rows{justify-content: space-around;
-                    .row{justify-content: space-between; padding-left: 75px; padding-right: 75px;
-                        a{
-                            .row-img{max-width: 230px; max-height: 230px;
-                                img{}
+    .st-page-wrapper {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        .st-page {
+            .mbox {
+                .rows {
+                    justify-content: space-between;
+                    min-height: calc(100vh - 70px);
+                    .row {
+                        justify-content: space-around;
+                        a {
+                            .row-img {
+                                max-width: 230px;
+                                max-height: 230px;
+                                img {}
                             }
-                            .row-img-other{
-                            }
-                            span{}
+                            .row-img-other {}
+                            span {}
                         }
                     }
                 }
-                .row-center{margin: -50 auto;
-                    img{max-width: 210px;}
+                .row-center {
+                    margin: -50 auto;
+                    img {
+                        max-width: 210px;
+                    }
                 }
             }
         }
@@ -27,75 +136,93 @@
 }
 
 @media screen and (max-width: 1280px) {
-     #kindergarden-block5-wrap{
-        .types-language{ padding-left: 0px; padding-right: 0px; justify-content:space-around;
-            .type-lg-wrap{ width: 29%;
-                .row{}
-                .row2{
-                    &:after{}
-                    span{}
+    #kindergarden-block5-wrap {
+        .types-language {
+            padding-left: 0px;
+            padding-right: 0px;
+            justify-content: space-around;
+            .type-lg-wrap {
+                width: 29%;
+                .row {}
+                .row2 {
+                    &:after {}
+                    span {}
                 }
-                .row3{
-                    .row{}
-                    .rowh:after{}
+                .row3 {
+                    .row {}
+                    .rowh:after {}
                 }
             }
         }
     }
 }
+
 @media screen and (max-width: 1195px) {
-     #kindergarden-block5-wrap{
-        .types-language{
-            .type-lg-wrap{ width: 100%; justify-content: space-around; padding-bottom: 20px;
-                .type-lg{ 
-                    .row{}
-                    .row2{
-                        &:after{}
-                        span{}
+    #kindergarden-block5-wrap {
+        .types-language {
+            .type-lg-wrap {
+                width: 100%;
+                justify-content: space-around;
+                padding-bottom: 20px;
+                .type-lg {
+                    .row {}
+                    .row2 {
+                        &:after {}
+                        span {}
                     }
-                    .row3{
-                        .row{}
-                        .rowh:after{}
+                    .row3 {
+                        .row {}
+                        .rowh:after {}
                     }
                 }
             }
         }
     }
 }
+
 @media screen and (max-width: 1024px) {
-    .st-page-wrapper{
-        .st-page{ 
-            .mbox{
-                .rows{justify-content: space-between;
-                    .row{justify-content: space-between;
-                        a{
-                            .row-img{max-width: 230px; max-height: 230px;
-                                img{}
+    .st-page-wrapper {
+        .st-page {
+            .mbox {
+                .rows {
+                    justify-content: space-between;
+                    .row {
+                        justify-content: space-between;
+                        a {
+                            .row-img {
+                                max-width: 230px;
+                                max-height: 230px;
+                                img {}
                             }
-                            .row-img-other{
-                            }
-                            span{}
+                            .row-img-other {}
+                            span {}
                         }
                     }
                 }
-                .row-center{margin: -50 auto;
-                    img{max-width: 250px;}
+                .row-center {
+                    margin: -50 auto;
+                    img {
+                        max-width: 250px;
+                    }
                 }
             }
         }
     }
-    #kindergarden-block5-wrap{
-        .types-language{
-            .type-lg-wrap{ width: 100%; justify-content: space-around; padding-bottom: 20px;
-                .type-lg{ 
-                    .row{}
-                    .row2{
-                        &:after{}
-                        span{}
+    #kindergarden-block5-wrap {
+        .types-language {
+            .type-lg-wrap {
+                width: 100%;
+                justify-content: space-around;
+                padding-bottom: 20px;
+                .type-lg {
+                    .row {}
+                    .row2 {
+                        &:after {}
+                        span {}
                     }
-                    .row3{
-                        .row{}
-                        .rowh:after{}
+                    .row3 {
+                        .row {}
+                        .rowh:after {}
                     }
                 }
             }
@@ -104,17 +231,20 @@
 }
 
 @media screen and (max-width: 992px) {
-    #kindergarden-block5-wrap{
-        .types-language{ padding-left: 10px; padding-right: 10px; flex-wrap: wrap;
-            .type-lg{
-                .row{}
-                .row2{
-                    &:after{}
-                    span{}
+    #kindergarden-block5-wrap {
+        .types-language {
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-wrap: wrap;
+            .type-lg {
+                .row {}
+                .row2 {
+                    &:after {}
+                    span {}
                 }
-                .row3{
-                    .row{}
-                    .rowh:after{}
+                .row3 {
+                    .row {}
+                    .rowh:after {}
                 }
             }
         }
@@ -122,28 +252,37 @@
 }
 
 @media screen and (max-width: 768px) {
-    .st-page-wrapper{
-        .st-page{ 
-            .mbox{padding-left: 0px; padding-right: 0px;
-                .rows{justify-content: space-between; padding-top: 80px; padding-bottom: 80px; 
-                    .row{justify-content: space-between; padding-left: 0px; padding-right: 0px;
-                        a{
-                            .row-img{
-                                img{}
+    .st-page-wrapper {
+        .st-page {
+            .mbox {
+                padding-left: 10px;
+                padding-right: 10px;
+                .rows {
+                    justify-content: space-between;
+                    padding-top: 80px;
+                    padding-bottom: 80px;
+                    .row {
+                        justify-content: space-between;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        a {
+                            .row-img {
+                                img {}
                             }
-                            .row-img-other{
-                            }
-                            span{}
+                            .row-img-other {}
+                            span {}
                         }
                     }
                 }
-                .row-center{margin: -50 auto;
-                    img{max-width: 250px;}
+                .row-center {
+                    margin: -50 auto;
+                    img {
+                        max-width: 250px;
+                    }
                 }
             }
         }
     }
-
     #kindergarden-block10-wrap {
         .kindergarden-block10 {
             .kindergarden-block10-exeptionslist {
@@ -160,29 +299,37 @@
             }
         }
     }
-    #kindergarden-block5-wrap{ 
-    .kindergarden-block10-exeptionslist{padding: 20px;}
-}
+    #kindergarden-block5-wrap {
+        .kindergarden-block10-exeptionslist {
+            padding: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 666px) {
-    .st-page-wrapper{
-        .st-page{ 
-            .mbox{
-                .rows{
-                    .row{
-                        a{
-                            .row-img{max-width: 300px; max-height: 300px;
-                                img{         }
+    .st-page-wrapper {
+        .st-page {
+            .mbox {
+                .rows {
+                    .row {
+                        a {
+                            .row-img {
+                                max-width: 300px;
+                                max-height: 300px;
+                                img {}
                             }
-                            .row-img-other{
-                            }
-                            span{}
+                            .row-img-other {}
+                            span {}
                         }
                     }
                 }
-                .row-center{height: 250px; width: 250px;
-                    img{display: block; border-radius: 50%;}
+                .row-center {
+                    height: 250px;
+                    width: 250px;
+                    img {
+                        display: block;
+                        border-radius: 50%;
+                    }
                 }
             }
         }
@@ -206,24 +353,29 @@
 }
 
 @media screen and (max-width: 479px) {
-    #kindergarden-block5-wrap{
-        .mbox{padding-left: 5px; padding-right: 5px;
-            .types-language{ padding-left: 10px; padding-right: 10px; flex-wrap: wrap; 
-                .type-lg-wrap{justify-content: space-between;
-                    .row{}
-                    .row2{
-                        &:after{}
-                        span{}
+    #kindergarden-block5-wrap {
+        .mbox {
+            padding-left: 5px;
+            padding-right: 5px;
+            .types-language {
+                padding-left: 10px;
+                padding-right: 10px;
+                flex-wrap: wrap;
+                .type-lg-wrap {
+                    justify-content: space-between;
+                    .row {}
+                    .row2 {
+                        &:after {}
+                        span {}
                     }
-                    .row3{
-                        .row{}
-                        .rowh:after{}
+                    .row3 {
+                        .row {}
+                        .rowh:after {}
                     }
                 }
             }
         }
     }
-    
     #kindergarden-block10-wrap {
         .kindergarden-block10 {
             .kindergarden-block10-mainlist {
