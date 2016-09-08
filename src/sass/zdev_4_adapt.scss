@@ -16,6 +16,7 @@
                     img {
                         display: block;
                         border-radius: 50%;
+                        margin: 0 auto;
                     }
                 }
             }
@@ -397,3 +398,9 @@
 }
 
 @media screen and (max-width: 320px) {}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+
+    .st-page-wrapper .st-page .mbox .rows .row a {opacity: 1;}
+
+}

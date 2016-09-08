@@ -476,8 +476,14 @@
         }
     }
 
-/* addnew */
+/* addnew */  
 
 .block3-wrap{ background-color: #f7f7f7; }
 .block3-wrap .contein-row .block-image.left:after{ border-color: transparent #f7f7f7 transparent transparent; }
 .block3-wrap .contein-row .block-image.right:after{ border-color: transparent transparent transparent #f7f7f7; }
+
+
+#call_success{ width: 320px; padding: 100px 10px; background-image: url('../images/far3.jpg'); background-size: 570px 435px; background-position: center center;
+    .call-title{text-align: center;  font-family: "Roboto"; line-height: 1.2; color: white; font-size: 26px; padding: 15px 0 5px; background-color: rgba(240, 71, 78, 0.8); font-weight: 700; }
+    .call-subtitle{ text-align: center;  font-family: "Roboto"; line-height: 1.2; color: white; font-size: 18px; padding: 5px 0 15px; background-color: rgba(240, 71, 78, 0.8); font-weight: 700;}
+}
